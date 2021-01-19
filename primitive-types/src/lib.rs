@@ -81,6 +81,7 @@ mod num_traits {
 	impl_uint_num_traits!(U128, 2);
 	impl_uint_num_traits!(U256, 4);
 	impl_uint_num_traits!(U512, 8);
+	impl_uint_num_traits!(U1024, 16);
 }
 
 #[cfg(feature = "impl-serde")]
@@ -91,6 +92,7 @@ mod serde {
 	impl_uint_serde!(U128, 2);
 	impl_uint_serde!(U256, 4);
 	impl_uint_serde!(U512, 8);
+	impl_uint_serde!(U1024, 16);
 
 	impl_fixed_hash_serde!(H128, 16);
 	impl_fixed_hash_serde!(H160, 20);
@@ -106,6 +108,7 @@ mod codec {
 	impl_uint_codec!(U128, 2);
 	impl_uint_codec!(U256, 4);
 	impl_uint_codec!(U512, 8);
+	impl_uint_codec!(U1024, 16);
 
 	impl_fixed_hash_codec!(H128, 16);
 	impl_fixed_hash_codec!(H160, 20);
