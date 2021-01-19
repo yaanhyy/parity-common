@@ -6,7 +6,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-use crate::{U128, U256, U512, U64};
+use crate::{U128, U256, U512, U64, U1024};
 use fixed_hash::*;
 #[cfg(feature = "codec")]
 use impl_codec::impl_fixed_hash_codec;
@@ -58,6 +58,7 @@ impl_fixed_hash_serde!(H264, 33);
 impl_fixed_hash_codec!(H264, 33);
 
 pub use primitive_types::H512;
+pub use primitive_types::H1024;
 
 construct_fixed_hash! { pub struct H520(65); }
 #[cfg(feature = "rlp")]
@@ -89,6 +90,7 @@ impl_uint_conversions!(H64, U64);
 impl_uint_conversions!(H128, U128);
 impl_uint_conversions!(H256, U256);
 impl_uint_conversions!(H512, U512);
+impl_uint_conversions!(H1024, U1024);
 
 #[cfg(test)]
 mod tests {
