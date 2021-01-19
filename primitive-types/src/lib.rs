@@ -45,6 +45,11 @@ construct_uint! {
 	#[cfg_attr(feature = "scale-info", derive(TypeInfo))]
 	pub struct U512(8);
 }
+construct_uint! {
+	/// 1024-bits unsigned integer.
+	#[cfg_attr(feature = "scale-info", derive(TypeInfo))]
+	pub struct U1024(16);
+}
 
 construct_fixed_hash! {
 	/// Fixed-size uninterpreted hash type with 16 bytes (128 bits) size.
